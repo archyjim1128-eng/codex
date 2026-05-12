@@ -1,0 +1,41 @@
+<svg width="1080" height="1920" viewBox="0 0 1080 1920" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff0f7"/>
+      <stop offset="50%" stop-color="#fff8ef"/>
+      <stop offset="100%" stop-color="#f6fbff"/>
+    </linearGradient>
+  </defs>
+  <rect width="1080" height="1920" fill="url(#bg)"/>
+  <rect x="60" y="120" width="960" height="240" rx="40" fill="white" stroke="#ffd9e8" stroke-width="4"/>
+  <text x="100" y="210" font-size="56" fill="#ff5f97">🍳 今日家庭点餐</text>
+  <text x="100" y="280" font-size="34" fill="#9a7f8b">可爱温馨版 UI 预览（示意图）</text>
+
+  <rect x="60" y="400" width="960" height="430" rx="40" fill="white" stroke="#ffd9e8" stroke-width="4"/>
+  <text x="100" y="490" font-size="48" fill="#ff6fa0">👤 点餐信息</text>
+  <text x="100" y="560" font-size="32" fill="#7f6571">点餐人 / 用餐日期 / 用餐时段</text>
+  <rect x="100" y="610" width="880" height="70" rx="20" fill="#fff7fb" stroke="#ffe2ee"/>
+  <rect x="100" y="710" width="880" height="70" rx="20" fill="#fff7fb" stroke="#ffe2ee"/>
+
+  <rect x="60" y="860" width="960" height="860" rx="40" fill="white" stroke="#ffd9e8" stroke-width="4"/>
+  <text x="100" y="950" font-size="48" fill="#ff6fa0">🥗 今日菜单（可多选）</text>
+
+  <g>
+    <rect x="100" y="1010" width="880" height="170" rx="24" fill="#fff7fb" stroke="#ffe2ee"/>
+    <rect x="130" y="1035" width="120" height="120" rx="16" fill="#ffeef6"/>
+    <text x="280" y="1100" font-size="38" fill="#6b4f5d">【待补充】菜品名称 1</text>
+  </g>
+  <g>
+    <rect x="100" y="1210" width="880" height="170" rx="24" fill="#fff7fb" stroke="#ffe2ee"/>
+    <rect x="130" y="1235" width="120" height="120" rx="16" fill="#ffeef6"/>
+    <text x="280" y="1300" font-size="38" fill="#6b4f5d">【待补充】菜品名称 2</text>
+  </g>
+  <g>
+    <rect x="100" y="1410" width="880" height="170" rx="24" fill="#fff7fb" stroke="#ffe2ee"/>
+    <rect x="130" y="1435" width="120" height="120" rx="16" fill="#ffeef6"/>
+    <text x="280" y="1500" font-size="38" fill="#6b4f5d">【待补充】菜品名称 3</text>
+  </g>
+
+  <rect x="180" y="1760" width="720" height="90" rx="45" fill="#ff9fc1"/>
+  <text x="390" y="1820" font-size="42" fill="white">提交我的点餐 💖</text>
+</svg>

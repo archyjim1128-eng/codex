@@ -1,0 +1,47 @@
+.banner {
+  background: linear-gradient(135deg, #fff0f7, #fdf4ff);
+}
+
+.field {
+  margin-bottom: 16rpx;
+  display: flex;
+  flex-direction: column;
+  gap: 8rpx;
+}
+
+.label {
+  color: #956d7d;
+  font-weight: 600;
+}
+
+.picker-value {
+  background: #fff7fb;
+  padding: 16rpx;
+  border-radius: 16rpx;
+  border: 2rpx solid #ffd9e8;
+}
+
+.refresh-btn {
+  background: #ffe5f1;
+  color: #cc4f82;
+  border-radius: 999rpx;
+}
+
+.summary-item {
+  margin-bottom: 16rpx;
+  padding: 14rpx;
+  border-radius: 16rpx;
+  background: #fff7fb;
+  border: 2rpx solid #ffe2ee;
+}
+
+.summary-name {
+  font-weight: 700;
+  color: #6b4f5d;
+}
+
+.summary-orderers,
+.summary-recipe {
+  color: #7f6571;
+  margin-top: 8rpx;
+}

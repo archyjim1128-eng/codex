@@ -1,0 +1,14 @@
+{
+  "pages": [
+    "pages/order/order",
+    "pages/admin/admin"
+  ],
+  "window": {
+    "navigationBarTitleText": "家庭点餐",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
+    "backgroundTextStyle": "light"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

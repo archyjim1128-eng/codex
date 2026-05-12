@@ -1,0 +1,78 @@
+.hero {
+  background: linear-gradient(135deg, #fff0f7, #fff7ef);
+}
+
+.hero-title {
+  font-size: 40rpx;
+  font-weight: 700;
+  color: #ff5f97;
+}
+
+.field {
+  margin-bottom: 18rpx;
+  display: flex;
+  flex-direction: column;
+  gap: 10rpx;
+}
+
+.label {
+  color: #956d7d;
+  font-weight: 600;
+}
+
+.input,
+.picker-value {
+  background: #fff7fb;
+  padding: 16rpx;
+  border-radius: 16rpx;
+  border: 2rpx solid #ffd9e8;
+}
+
+.dish-item {
+  display: flex;
+  align-items: center;
+  gap: 14rpx;
+  padding: 14rpx;
+  border-radius: 16rpx;
+  margin-bottom: 12rpx;
+  background: #fff;
+  border: 2rpx solid #ffeaf3;
+}
+
+.dish-item-selected {
+  background: #fff3f8;
+  border-color: #ff9dc4;
+}
+
+.dish-image {
+  width: 96rpx;
+  height: 96rpx;
+  border-radius: 14rpx;
+  background: #ffeef6;
+}
+
+.dish-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 6rpx;
+}
+
+.dish-name {
+  font-weight: 700;
+  color: #6a4b58;
+}
+
+.dish-tag {
+  color: #aa8c98;
+  font-size: 24rpx;
+}
+
+.tips {
+  color: #886977;
+}
+
+.admin-nav {
+  margin-top: 8rpx;
+  color: #ff5f97;
+  font-weight: 700;
+}

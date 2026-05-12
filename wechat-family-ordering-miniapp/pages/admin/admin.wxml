@@ -1,0 +1,32 @@
+<view class="container">
+  <view class="card banner">
+    <view class="title">🏡 家庭主账号后台</view>
+    <view class="subtitle">查看每日点餐汇总与每道菜做法</view>
+  </view>
+
+  <view class="card">
+    <view class="field">
+      <text class="label">查看日期</text>
+      <picker mode="date" value="{{diningDate}}" bindchange="onDiningDateChange">
+        <view class="picker-value">📅 {{diningDate}}</view>
+      </picker>
+    </view>
+
+    <button size="mini" class="refresh-btn" bindtap="reloadData">刷新数据</button>
+  </view>
+
+  <view class="card" wx:if="{{dishSummary.length}}">
+    <view class="title">🍲 菜品汇总</view>
+    <block wx:for="{{dishSummary}}" wx:key="dishId">
+      <view class="summary-item">
+        <view class="summary-name">{{item.name}}（{{item.count}}人点）</view>
+        <view class="summary-orderers">点餐人：{{item.orderersText}}</view>
+        <view class="summary-recipe">做法：{{item.recipe}}</view>
+      </view>
+    </block>
+  </view>
+
+  <view class="card" wx:else>
+    <text>今天还没人点餐，稍后再来看看吧～</text>
+  </view>
+</view>
