@@ -1,0 +1,52 @@
+<view class="container">
+  <view class="hero card">
+    <view class="hero-title">🍳 今日家庭点餐</view>
+    <view class="subtitle">把你想吃的告诉家人，一起吃顿温馨饭 ✨</view>
+  </view>
+
+  <view class="card">
+    <view class="title">👤 点餐信息</view>
+
+    <view class="field">
+      <text class="label">点餐人</text>
+      <input class="input" placeholder="请输入你的名字" value="{{orderer}}" bindinput="onOrdererInput" />
+    </view>
+
+    <view class="field">
+      <text class="label">用餐日期</text>
+      <picker mode="date" value="{{diningDate}}" bindchange="onDiningDateChange">
+        <view class="picker-value">📅 {{diningDate}}</view>
+      </picker>
+    </view>
+
+    <view class="field">
+      <text class="label">用餐时段</text>
+      <picker mode="selector" range="{{timeSlots}}" value="{{timeSlotIndex}}" bindchange="onTimeSlotChange">
+        <view class="picker-value">🕒 {{timeSlots[timeSlotIndex]}}</view>
+      </picker>
+    </view>
+  </view>
+
+  <view class="card">
+    <view class="title">🥗 今日菜单（可多选）</view>
+    <checkbox-group bindchange="onDishChange">
+      <block wx:for="{{menu}}" wx:key="id">
+        <label class="dish-item {{selectedDishIds.includes(item.id) ? 'dish-item-selected' : ''}}">
+          <checkbox class="dish-checkbox" value="{{item.id}}" checked="{{selectedDishIds.includes(item.id)}}" />
+          <image class="dish-image" src="{{item.image}}" mode="aspectFill"></image>
+          <view class="dish-meta">
+            <view class="dish-name">{{item.name}}</view>
+            <view class="dish-tag">{{item.tags.join(' · ')}}</view>
+          </view>
+        </label>
+      </block>
+    </checkbox-group>
+  </view>
+
+  <button class="btn-primary" bindtap="onSubmit">提交我的点餐 💖</button>
+
+  <view class="tips card">
+    <view>主账号可查看全家汇总结果：</view>
+    <navigator class="admin-nav" url="/pages/admin/admin">进入主账号后台 →</navigator>
+  </view>
+</view>
